@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const Widget = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
-  border: 1px solid ${({ theme }) => theme.colors.primary};
+  border: 1px solid ${({ theme }) => theme.colors.mainBg};
   background-color: ${({ theme }) => {
     return theme.colors.mainBg;
   }};
@@ -35,6 +35,8 @@ Widget.Header = styled.header`
 `;
 
 Widget.Content = styled.div`
+  border: 1px solid ${({ theme }) => theme.colors.mainBg};
+
   padding: 24px 32px 32px 32px;
   & > *:first-child {
     margin-top: 0;
