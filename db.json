@@ -2,28 +2,72 @@
   "bg": "https://4kwallpapers.com/images/wallpapers/counter-strike-global-offensive-cs-go-2020-games-sniper-2560x1440-1622.jpg",
 
   "title": "Quiz - Counter-Strike",
-  "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+  "description": "Prove se você é um pro ou um newba",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
-      "answer": 2,
+      "image": "https://media.tenor.com/images/a3eed3ca508bbf89ef85774b5608def7/tenor.gif",
+      "title": "Qual é o animal presente nos mapas?",
+      "description": "Essa é a mais dificil!",
+      "answer": 3,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Pato",
+        "Ganço",
+        "Tatu",
+        "Galinha",
+        "Mula"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "image": "https://i.makeagif.com/media/10-28-2015/Nvfygw.gif",
+      "title": "Quantos tipos de granadas existem no jogo?",
+      "description": "Essa é vc vai errar!",
       "answer": 0,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+        "6",
+        "5",
+        "4",
+        "7",
+        "8"
+      ]
+    },
+    {
+      "image": "https://media.tenor.com/images/a91efde14b3efcf9441a09112cf40026/tenor.gif",
+      "title": "Qual é o código da C4?",
+      "description": "Será que consegue plantar a C4?",
+      "answer": 1,
+      "alternatives": [
+        "7234518",
+        "7355608",
+        "7587859",
+        "7417987",
+        "7359745"
+      ]
+    },
+    {
+      "image": "https://media.tenor.com/images/419db5600234cff85d8ad55c19daada3/tenor.gif",
+      "title": "Qual jogador ficou mais vezes no top 3 de csgo do rank de melhor do mundo da hltv?",
+      "description": "Não é o Taco!",
+      "answer": 5,
+      "alternatives": [
+        "GeT_RiGhT",
+        "FalleN",
+        "ZywOo",
+        "s1mple",
+        "NiKo",
+        "device"
+      ]
+    },
+    {
+      "image": "https://i.imgur.com/34bCwOX.gif?noredirect",
+      "title": "Qual cidade que o mapa Cache está representado?",
+      "description": "Se não souber é kick!",
+      "answer": 3,
+      "alternatives": [
+         "Kiev",
+         "Chernobyl",
+         "Carcóvia",
+         "Pripyat",
+         "Mykolaiv"
       ]
     }
   ],

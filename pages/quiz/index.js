@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import { motion } from 'framer-motion';
 import db from '../../db.json';
 import Widget from '../../src/components/Widget';
 import QuizLogo from '../../src/components/QuizLogo';
@@ -10,13 +11,22 @@ import Button from '../../src/components/Button';
 
 function ResultWidget({ results }) {
   return (
-    <Widget>
+    <Widget
+      as={motion.section}
+      transition={{ delay: 0, duration: 0.5 }}
+      variants={{
+        show: { opacity: 1, y: '0' },
+        hidden: { opacity: 0, y: '100%' },
+      }}
+      initial="hidden"
+      animate="show"
+    >
       <Widget.Header>
-        Tela de Resultado:
+        <b>Resultado :</b>
       </Widget.Header>
 
       <Widget.Content>
-        <p>
+        <b>
           Você acertou
           {' '}
           {/* {results.reduce((somatoriaAtual, resultAtual) => {
@@ -29,14 +39,16 @@ function ResultWidget({ results }) {
           {results.filter((x) => x).length}
           {' '}
           perguntas
-        </p>
+        </b>
         <ul>
           {results.map((result, index) => (
             <li key={`result__${result}`}>
-              #
+              *
+              {' '}
+              Pergunta
+              {' '}
               {index + 1}
               {' '}
-              Resultado:
               {result === true
                 ? 'Acertou'
                 : 'Errou'}
@@ -76,7 +88,16 @@ function QuestionWidget({
   const hasAlternativeSelected = selectedAlternative !== undefined;
 
   return (
-    <Widget>
+    <Widget
+      as={motion.section}
+      transition={{ delay: 0, duration: 0.5 }}
+      variants={{
+        show: { opacity: 1, y: '0' },
+        hidden: { opacity: 0, y: '100%' },
+      }}
+      initial="hidden"
+      animate="show"
+    >
       <Widget.Header>
         {/* <BackLinkArrow href="/" /> */}
         <h3>
@@ -110,7 +131,7 @@ function QuestionWidget({
               onSubmit();
               setIsQuestionSubmited(false);
               setSelectedAlternative(undefined);
-            }, 3 * 1000);
+            }, 1 * 1000);
           }}
         >
           {question.alternatives.map((alternative, alternativeIndex) => {
@@ -143,8 +164,8 @@ function QuestionWidget({
           <Button type="submit" disabled={!hasAlternativeSelected}>
             Confirmar
           </Button>
-          {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
-          {isQuestionSubmited && !isCorrect && <p>Você errou!</p>}
+          {/* {isQuestionSubmited && isCorrect && <p>Você acertou!</p>} */}
+          {/* {isQuestionSubmited && !isCorrect && <p>Você errou!</p>} */}
         </AlternativesForm>
       </Widget.Content>
     </Widget>
