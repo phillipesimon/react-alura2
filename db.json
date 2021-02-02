@@ -1,7 +1,7 @@
 {
   "bg": "https://4kwallpapers.com/images/wallpapers/counter-strike-global-offensive-cs-go-2020-games-sniper-2560x1440-1622.jpg",
 
-  "title": "Home Quiz - Counter-Strike",
+  "title": "Quiz - Counter-Strike",
   "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
   "questions": [
     {
@@ -28,7 +28,8 @@
     }
   ],
   "external": [
-    ""
+    "https://aluraquiz-css.omariosouto.vercel.app/",
+    "https://aluraquiz-devsoutinho.omariosouto.vercel.app/"
   ],
   "theme": {
     "colors": {
